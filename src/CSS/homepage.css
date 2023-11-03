@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.homepage_container{
+    min-height: 100vh;
+    background-color: #ec7df6;
+}
+.image_section {
+    display: flex;
+    padding-left: 15vw;
+    padding-right: 10vw;
+}
+
+.heading_section {
+    width: 70vw;
+    padding-top: 10vh;
+}
+
+.heading_section h1 {
+    font-size: 4em;
+    margin-top: 0.1em;
+}
+
+.heading_section h2 {
+    font-size: 1em;
+    margin-bottom: 0.1em;
+}
+
+.btn-shop {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 0.8em;
+    font-size: 1em;
+    padding: 1em;
+}
+
+.btn-shop:hover {
+    border: transparent;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 2ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Media query for smaller screens (e.g., tablets) */
+@media screen and (max-width: 768px) {
+    .image_section {
+        flex-direction: column; 
+        padding: 5vw;
+    }
+
+    .heading_section {
+        width: 100%; 
+    }
+
+    .btn-shop {
+        font-size: 0.8em; 
+        padding: 0.8em; 
+    }
+    .image_section img{
+        bottom: 0;
+    }
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 480px) {
+    .heading_section h1 {
+        font-size: 2.5em;
+    }
+
+    .heading_section h2 {
+        font-size: 0.8em; 
+    }
+
+    .btn-shop {
+        font-size: 0.7em; 
+        padding: 0.7em; 
+    }
+}

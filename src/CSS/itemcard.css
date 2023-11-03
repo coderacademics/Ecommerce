@@ -1,0 +1,119 @@
+.card-container {
+    width: 15vw;
+    height: 52vh;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    padding-left: 2vh;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    padding-right: 2vh;
+    transition: zoom 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    overflow: hidden;
+    position: relative;
+}
+@media screen and (max-width: 1170px) {
+    .card-container{
+        width: 20vw;
+        height: 45vh;
+        font-size: 90%;
+    }
+}
+@media screen and (max-width: 880px) {
+    .card-container{
+        width: 18vw;
+        height: 46vh;
+        font-size: 85%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-container{
+        width: 30vw;
+        height: 45vh;
+
+    }
+}
+
+/* Media query for even mobile screens*/
+@media screen and (max-width: 600px) {
+    .card-container{
+        width: 30vw;
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card-container{
+        width: 20vw;
+        height: 35vh;
+        font-size: 70%;
+    }
+    .card_image{
+        height: 25vh;
+    }
+}
+
+.card-container:hover {
+    zoom: 102%;
+}
+
+.card_image {
+    width: 15vw;
+    height: 30vh;
+    /* border: 1px solid red; */
+}
+
+@media screen and (max-width: 400px) {
+    .card_image{
+        height: 20vh;
+    }
+}
+
+.product_info {
+    height: 20vh;
+    /* border: 2px solid blue; */
+    cursor: pointer;
+    overflow: hidden;
+    /* Add this to hide content that overflows */
+    position: relative;
+    /* Add this for positioning inner elements */
+}
+
+.product_info:hover {
+    /* transform: scaleY(1.3); */
+}
+
+.product_original_price,
+.product_curr_price {
+    font-weight: bold;
+}
+
+.strike_through {
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
+.buy_btn,
+.cart_btn {
+    border-radius: 0.5em;
+    cursor: pointer;
+    padding: 0.5vh;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    width: 65%;
+}
+
+.buy_btn {
+    background-color: rgb(252, 220, 61);
+    font-weight: 600;
+    border: 0.1 solid black;
+}
+
+.cart_btn {
+    margin-left: 0.8em;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}

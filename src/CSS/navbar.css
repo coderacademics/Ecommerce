@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
+
+.navbar_section {
+    display: flex;
+    list-style: none;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 1.2em;
+    justify-content: space-evenly;
+}
+
+.navbar_section:nth-child(1) {
+    width: 20vw;
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.navbar_section:nth-child(2) {
+    width: 40vw;
+    /* border: 2px solid yellow; */
+}
+
+.navbar_section:nth-child(3) {
+    width: 20vw;
+    /* border: 2px solid blue */
+}
+
+.shop_section {
+    display: flex;
+    list-style: none;
+    width: 25vw;
+    justify-content: space-around;
+}
+
+.shop_section_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .shop_section {
+        display: none;
+    }
+
+    .shop_section_mobile {
+        display: inline;
+    }
+}
+
+/* Add CSS for the animated dropdown */
+.category_dropdown_btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    padding: 1em;
+    transition: color 0.3s ease;
+    /* Add a color transition */
+}
+
+.category_dropdown_btn:hover {
+    color: #ec7df6;
+    /* Change color on hover */
+}
+
+.category_dropdown {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    /* Position below the button */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    /* Add transition for smooth animation */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Add styles for the active dropdown */
+.category_dropdown.active {
+    opacity: 1;
+    /* Show the dropdown */
+    visibility: visible;
+}
+
+.category_items {
+    text-decoration: none;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    color: black;
+}
+
+.category_items:hover {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.shop_items {
+    text-decoration: none;
+    color: inherit;
+}
+
+.shop_items:hover {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.btn-login {
+    border: 2px solid red;
+    color: red;
+    border-radius: 1.5em;
+    background-color: transparent;
+    padding: 1em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: red;
+    color: white;
+    border-color: white;
+}
+
+.btn-cart {
+    cursor: pointer;
+}
