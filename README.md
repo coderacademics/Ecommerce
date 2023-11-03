@@ -1,4 +1,3 @@
-Here's a README.md file for your Git repository for the "Shopper" eCommerce web application:
 
 # Shopper - eCommerce Web Application
 
