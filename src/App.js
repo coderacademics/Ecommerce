@@ -1,5 +1,5 @@
 import HomePage from "./HomePage/homepage";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import MenHomePage from "./ShopItems/Men/MenHomePage";
 import WomenHomePage from "./ShopItems/Women/WomenHomePage";
 import ChildHomePage from "./ShopItems/Children/ChildHomePage";
@@ -7,7 +7,7 @@ import ItemCard from "./ShopItems/Men/ItemCard";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/Ecommerce">
         <Routes>
           <Route path="/" exact Component={HomePage} />
           <Route path="/men" exact Component={MenHomePage} />
