@@ -8,7 +8,7 @@ function Navbar() {
   };
   return (
     <div className='navbar_container'>
-      <Link style={{ textDecoration: "none", color: "inherit" }} to='/home'><div className='navbar_section'>
+      <Link style={{ textDecoration: "none", color: "inherit" }} to='/Ecommerce'><div className='navbar_section'>
         SHOPPER
         <img width="96" height="96" src="https://img.icons8.com/fluency/96/shopping-basket.png" alt="shopping-basket" />
       </div></Link>
