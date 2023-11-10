@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Router basename="/Ecommerce">
         <Routes>
-          <Route path="/" exact Component={HomePage} />
+          <Route path="/home" exact Component={HomePage} />
           <Route path="/men" exact Component={MenHomePage} />
           <Route path="/women" exact Component={WomenHomePage} />
           <Route path="/children" exact Component={ChildHomePage} />
